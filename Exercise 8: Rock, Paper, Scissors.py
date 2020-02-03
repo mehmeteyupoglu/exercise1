@@ -3,7 +3,6 @@
 """
 @author: Mehmet Eyüpoğlu
 """
-
 """
 Exercise 8
 
@@ -18,7 +17,6 @@ Scissors beats paper,
 Paper beats rock.
 
 """
-
 user_input1 = input('Choos one: rock, paper, scissors? ')
 user_input2 = input('Choos one: rock, paper, scissors? ')
 user_input1 = user_input1.lower()
@@ -46,12 +44,8 @@ def compare(u1, u2):
         else:
             print('Scissors win')
     
+    else:
+        print('Invalid input')
+    
 compare(user_input1, user_input2)
     
-
-
-
-
-
-
-
