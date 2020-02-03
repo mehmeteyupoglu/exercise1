@@ -31,6 +31,7 @@ target_year = date_of_birth + 100
 
 output = 'Dear {}, you will turn 100 in {}. '.format(name.title(), 
                target_year)
+
 for i in range(1, the_frequency):
     print(output)
 
