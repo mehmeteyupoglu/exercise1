@@ -28,8 +28,25 @@ Ask the user what size game board they want to draw, and draw it for them to
 the screen using Python’s print statement.
 
 """
-
+#solution 1
 a = '---'.join('    ')
 b = '   '.join('||||')
 
 print('\n'.join((a, b, a, b, a, b, a)))
+
+#solution 2
+def drawboard(num):
+    num = int(num)
+    i = 0
+    ho = ' ---'
+    ve = '|   '
+    ho = ho * num
+    ve = ve * (num+1)
+    
+    while i < (num+1):
+        print(ho)
+        if i != num:
+            print(ve)
+        i += 1
+    
+drawboard(3)
